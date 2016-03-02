@@ -35,7 +35,7 @@
 }
 
 /*****************************
-SANS TEXT-DECORATION FOR <a>
+style
 ******************************/
 
 a { 
@@ -53,19 +53,29 @@ ul {
 	margin-top: 1.2rem;
 }
 
+.body-text {
+	font-family: 'cantarellregular';
+	font-size: 1.0625rem;
+	color: #224070;
+	text-align: center;
+	/*margin: 10% 7% 0% 7%;*/ 
+	/*padding-bottom: 12%;*/
+}
+
+.wordmark-blue {
+	text-align: center;
+	font-family: 'cantarellbold';
+	font-size: 1.9rem;
+	text-shadow: 1px 1px 1px #aaaaaa;
+	letter-spacing: 0.125rem;
+	color: #224070;
+	margin:0;
+	padding:0;
+}
 
 /***************************
 HEADER -new code-
 ****************************/
-
-/*.container {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	margin: 0;
-	padding: 0;
-	flex-wrap: wrap;
-}*/
 
 header {
 	display: flex;
@@ -128,6 +138,8 @@ header {
 	transition-timing-function: ease-out;
 }
 
+/********** HOME PAGE ************/
+
 /*****************************
 HERO CONTENT -new code-
 *****************************/
@@ -152,8 +164,6 @@ HERO CONTENT -new code-
 	font-family: 'cantarellregular';
 	font-size: 1.0625rem;
 	color: #224070;
-	background-color: #fff;
-	/*height: 10rem;*/
 	text-align: center;
 	margin: 10% 7% 0% 7%; 
 	padding-bottom: 12%;
@@ -193,10 +203,6 @@ section {
 	margin:0;
 	padding:0;
 	background-color: #224070;
-}
-
-.service-icon {
-	display: none;
 }
 
 .service-text-style{
@@ -269,7 +275,22 @@ section {
 Footer Styling
 ********************************/
 
+.footer-index {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #DCDCDC;
+	margin-top: 2rem;
+	color: #224070;
+	font-size: 0.9rem;
+}
+
 .footer {
+	position: fixed;
+	left:0px;
+   bottom:0px;
+   height:auto;
+   width:100%;
 	display:flex;
 	flex-direction: column;
 	align-items: center;
@@ -412,11 +433,10 @@ HERO CONTENT - MIN 600px - new code
 }
 
 .intro-text {
-	font-family: 'cantarellregular';
 	font-size: 1.5rem;
 	line-height: 2.3rem;
 	margin: 7% 7% 0% 7%; 
-	padding-bottom: 10%;
+	padding-bottom: 8%;
 }
 
 
@@ -431,7 +451,7 @@ SECTION CONTENT - MIN 600px - new code
 }*/
 
 .service-text-style{
-	padding-top: 0.8rem;
+	padding-top: 2rem;
 }
 
 .sub-title a {
@@ -443,7 +463,7 @@ SECTION CONTENT - MIN 600px - new code
 
 .service-text {
 	font-family: 'cantarellregular';
-	font-size: 18px;
+	font-size: 1.125rem;
 	color: #fff;
 	text-align: center;
 	margin-bottom: -10px;
@@ -473,15 +493,9 @@ HERO CONTENT - MIN 920px - new code
 }
 
 .intro-text {
-	font-family: 'cantarellregular';
-	font-size: 1.8rem;
-	line-height: 2.7rem;
-	color: #224070;
-	background-color: #fff;
-	/*height: 10rem;*/
-	text-align: center;
-	margin: 7% 7% 0% 7%; 
-	/*padding-bottom: 10%;*/
+	font-size: 2.1rem;
+	line-height: 3.3rem;
+	
 }
 
 /************************************
@@ -492,13 +506,6 @@ section {
 	height: 100%;
 }
 
-/*.service-icon {
-	display: inline-block;
-	width: 10%;
-	height: 10%;
-	margin-right: auto;
-	margin-left: auto;
-}*/
 
 .section-container{
 	display: flex;
@@ -521,22 +528,20 @@ section {
 	/*background-color: #224070;*/
 }
 
+.service-text-style {
+	padding-top: 10%;
+	margin-bottom:0;
+}
 
-/*.sub-title {
-	text-align: center;
-}*/
 
 .sub-title a {
-	/*color: #3489CE;
-	font-family: 'cantarellbold';*/
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 }
 
 .service-text {
-	font-size: 15px;
+	font-size: 20px;
 	margin-top:0;
-	padding-bottom: 10%;
-	line-height: 1.8rem;
+	line-height: 2rem;
 
 }
 
@@ -579,10 +584,62 @@ FOOTER - MIN 600px - new code
 	margin-top: -8rem;
 }
 
-/******************
-github test nav-bar
-******************/
 
 
+/*************************************************************
+**************************************************************
 
+MIN 1500PX -MEDIA QUERY | NEW CODE-
+
+**************************************************************
+**************************************************************/
+
+@media only screen and (min-width: 1500px) {
+	
+	.service-text-style {
+		padding-top: 10%;
+		margin-bottom: 0;
+	}
+
+	.intro-text {
+		font-size: 2.7rem;
+		line-height: 4.2rem;
+	}
+
+/************************************
+SECTION - MIN 1500PX - new code
+************************************/	
+
+
+.section-container{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+.img-service {
+	display: flex;
+	flex-direction: column;
+	align-self: stretch;
+	flex: 0 0 50%;
+}
+
+.service-text-style {
+	padding-top: 13%;
+	margin-bottom:0;
+}
+
+
+.sub-title a {
+	font-size: 1.9rem;
+}
+
+.service-text {
+	font-size: 25px;
+	margin-top:0;
+	line-height: 2.4rem;
+
+}
+
+/********** CONTACT PAGE ************/
 
