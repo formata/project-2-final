@@ -47,18 +47,25 @@ ul {
 	list-style-type: none;
 }
 
+.img-hero {
+	width: 100%;
+	height: auto;
+	margin-top: 1.2rem;
+}
+
+
 /***************************
 HEADER -new code-
 ****************************/
 
-.container {
+/*.container {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	margin: 0;
 	padding: 0;
 	flex-wrap: wrap;
-}
+}*/
 
 header {
 	display: flex;
@@ -70,12 +77,15 @@ header {
 	flex-direction: column;
 }
 
+#logo-center {
+	align-self: center;
+}
+
 .logo-style {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 	height: 3.5rem;
 	width: auto;
-	align-self: center;
 }
 
 .line {
@@ -113,16 +123,10 @@ header {
 }
 
 .menu-list-style a:hover {
-	text-decoration: none;
-	font-family: 'cantarellbold';
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	font-size: 11px;
 	color: #224070;
 	transition-duration: 0.5;
 	transition-timing-function: ease-out;
 }
-
 
 /*****************************
 HERO CONTENT -new code-
@@ -195,23 +199,26 @@ section {
 	display: none;
 }
 
-.service-title {
-	text-align: center;
+.service-text-style{
+	padding-top: 1.2rem;
 }
 
-.service-title a {
+.sub-title {
+	text-align: center;
 	text-decoration: none;
 	color: #3489CE;
 	font-family: 'cantarellbold';
 	font-size: 0.98rem;
 	letter-spacing: 0.12rem;
-	padding-top: 8%;
+}
+
+.sub-title a {
 	transition-property: color;
 	transition-duration: 0.5s;
 	transition:timing-function: ease-out;
 }
 
-.service-title a:hover {
+.sub-title a:hover {
 	color: #fff;
 	transition-duration: 0.5;
 	transition-timing-function: ease-out;
@@ -377,6 +384,12 @@ header {
 	padding: 2rem;
 }
 
+.img-hero {
+	width: 100%;
+	height: auto;
+	margin-top: 0;
+}
+
 /***********************************
 HERO CONTENT - MIN 600px - new code
 ***********************************/
@@ -411,13 +424,17 @@ HERO CONTENT - MIN 600px - new code
 SECTION CONTENT - MIN 600px - new code
 **************************************/
 
-.service-title {
+/*.sub-title {
 	margin-top:5%;
 	margin-bottom:2%;
 	padding:0;
+}*/
+
+.service-text-style{
+	padding-top: 0.8rem;
 }
 
-.service-title a {
+.sub-title a {
 	font-size: 1.4rem;
 	transition-property: color;
 	transition-duration: 0.5s;
@@ -475,13 +492,13 @@ section {
 	height: 100%;
 }
 
-.service-icon {
+/*.service-icon {
 	display: inline-block;
 	width: 10%;
 	height: 10%;
 	margin-right: auto;
 	margin-left: auto;
-}
+}*/
 
 .section-container{
 	display: flex;
@@ -501,17 +518,17 @@ section {
 	flex-direction: column;
 	align-self: stretch;
 	flex: 0 0 50%;
-	background-color: #224070;
+	/*background-color: #224070;*/
 }
 
 
-.service-title {
+/*.sub-title {
 	text-align: center;
-}
+}*/
 
-.service-title a {
-	color: #3489CE;
-	font-family: 'cantarellbold';
+.sub-title a {
+	/*color: #3489CE;
+	font-family: 'cantarellbold';*/
 	font-size: 1.4rem;
 }
 
