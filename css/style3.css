@@ -275,7 +275,7 @@ section {
 Footer Styling
 ********************************/
 
-.footer-index {
+.footer {
 	display:flex;
 	flex-direction: column;
 	align-items: center;
@@ -285,20 +285,6 @@ Footer Styling
 	font-size: 0.9rem;
 }
 
-.footer {
-	position: fixed;
-	left:0px;
-   bottom:0px;
-   height:auto;
-   width:100%;
-	display:flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: #DCDCDC;
-	margin-top: 2rem;
-	color: #224070;
-	font-size: 0.9rem;
-}
 
 .contact-footer {
 	display: flex;
@@ -345,6 +331,50 @@ Footer Styling
 .icon-footer li i {
 	padding: 2rem;
 }
+
+/********** ABOUT PAGE ************/
+
+/************************************
+SECTION-ABOUT PAGE-
+************************************/
+
+.text-left-align {
+	font-family: 'cantarellregular';
+	font-size: 1.0625rem;
+	color: #224070;
+	text-align: left;
+	padding-top: 1.2rem;
+	padding-right: 2rem;
+	padding-left: 2rem;
+	padding-bottom: 0.75rem;
+}
+
+.flex-column {
+}
+
+.team-profile img {
+	margin: auto;
+	width: 60%;
+	margin-left: 5rem;
+	margin-right:5rem;
+}
+
+.team-profile .team-name {
+	font-family: 'cantarellbold';
+	font-size: 1.5rem;
+	margin-bottom: -0.2rem;
+	color: #224070;
+	text-align: center;
+}
+
+.team-profile .team-role {
+	font-family: 'cantarellregular';
+	font-size: 0.85rem;
+	letter-spacing: 0.1rem;
+	color: #224070;
+	text-align: center;
+}
+
 
 
 /*************************************************************
@@ -470,12 +500,62 @@ SECTION CONTENT - MIN 600px - new code
 	line-height: 2rem;
 }
 
+/********** CONTACT PAGE MIN 600PX ************/
+
+/************************************
+SECTION - ABOUT PAGE - 600PX
+************************************/
+
+body {
+	width: 100%;
+}
+
+.text-left-align {
+	font-size: 1.0625rem;
+	text-align: left;
+	padding-right: 5rem;
+	padding-left: 5rem;
+}
+
+.flex-column {
+	width:100%;
+	display: flex;
+	align-items: flex;
+}
+
+.team-profile {
+	width: 100%;
+	align-self: center;
+}
+
+.team-img {
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	margin: auto;
+	width: 60%;
+}
+
+.team-profile .team-name {
+	font-size: 1.1rem;
+	margin-bottom: -0.2rem;
+	color: #224070;
+	text-align: center;
+}
+
+.team-profile .team-role {
+	font-family: 'cantarellregular';
+	font-size: 0.85rem;
+	letter-spacing: 0.1rem;
+	color: #224070;
+	text-align: center;
+}
 
 
 /*************************************************************
 **************************************************************
 
-MIN 950PX -MEDIA QUERY | NEW CODE-
+MIN 960PX -MEDIA QUERY | NEW CODE-
 
 **************************************************************
 **************************************************************/
@@ -483,7 +563,7 @@ MIN 950PX -MEDIA QUERY | NEW CODE-
 @media only screen and (min-width: 960px) {
 
 /***********************************
-HERO CONTENT - MIN 920px - new code
+HERO CONTENT - MIN 960px - new code
 ***********************************/
 
 .wordmark-style {
@@ -499,7 +579,7 @@ HERO CONTENT - MIN 920px - new code
 }
 
 /************************************
-SECTION - MIN 920PX - new code
+SECTION - MIN 960PX - new code
 ************************************/	
 
 section {
@@ -554,7 +634,7 @@ section {
 }
 
 /***********************************
-FOOTER - MIN 600px - new code
+FOOTER - MIN 960px - new code
 ***********************************/
 
 .footer {
@@ -641,5 +721,23 @@ SECTION - MIN 1500PX - new code
 
 }
 
-/********** CONTACT PAGE ************/
+/********** CONTACT PAGE MIN 1500PX ************/
+
+/************************************
+SECTION - ABOUT PAGE - 1500PX
+************************************/
+
+body {
+	width: 100%;
+}
+
+.text-left-align {
+	padding-right: 30rem;
+	padding-left: 30rem;
+}
+
+h2 {
+	padding-top: 2rem;
+}
+
 
