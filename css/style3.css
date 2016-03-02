@@ -375,7 +375,38 @@ SECTION-ABOUT PAGE-
 	text-align: center;
 }
 
+/********** PROJECT PAGE ************/
 
+/************************************
+SECTION - PROJECT PAGE-
+************************************/
+
+.title-left-align {
+	font-family: 'cantarellbold';
+	font-size: 0.98rem;
+	letter-spacing: 0.12rem;
+	color: #224070;
+	text-align: left;
+	padding-top: 0.65rem;
+	padding-right: 2rem;
+	padding-left: 2rem;
+}
+
+.project-description {
+font-family: 'cantarellregular';
+	font-size: 1.0625rem;
+	color: #224070;
+	text-align: left;
+	padding-right: 2rem;
+	padding-left: 2rem;
+	padding-bottom: 0.65rem;
+}
+
+.project-img {
+	width: 100%;
+	height: auto;
+	margin-top: 1.2rem;
+}
 
 /*************************************************************
 **************************************************************
@@ -663,6 +694,24 @@ FOOTER - MIN 960px - new code
 	justify-content: flex-end;
 	margin-top: -8rem;
 }
+
+/********** PROJECT PAGE 960PX ************/
+
+/************************************
+SECTION - PROJECT PAGE- MIN 960PX
+************************************/
+
+.project {
+	display: flex;
+	flex: 1 2 auto;
+}
+
+.project-img {
+	width: 100%;
+	height: auto;
+	margin-top: 0;
+}
+
 
 
 
