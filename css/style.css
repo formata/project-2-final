@@ -35,7 +35,7 @@
 }
 
 /*****************************
-SANS TEXT-DECORATION FOR <a>
+style
 ******************************/
 
 a { 
@@ -47,18 +47,35 @@ ul {
 	list-style-type: none;
 }
 
+.img-hero {
+	width: 100%;
+	height: auto;
+	margin-top: 1.2rem;
+}
+
+.body-text {
+	font-family: 'cantarellregular';
+	font-size: 1.0625rem;
+	color: #224070;
+	text-align: center;
+	/*margin: 10% 7% 0% 7%;*/ 
+	/*padding-bottom: 12%;*/
+}
+
+.wordmark-blue {
+	text-align: center;
+	font-family: 'cantarellbold';
+	font-size: 1.9rem;
+	text-shadow: 1px 1px 1px #aaaaaa;
+	letter-spacing: 0.125rem;
+	color: #224070;
+	margin:0;
+	padding:0;
+}
+
 /***************************
 HEADER -new code-
 ****************************/
-
-.container {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	margin: 0;
-	padding: 0;
-	flex-wrap: wrap;
-}
 
 header {
 	display: flex;
@@ -70,12 +87,15 @@ header {
 	flex-direction: column;
 }
 
+#logo-center {
+	align-self: center;
+}
+
 .logo-style {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 	height: 3.5rem;
 	width: auto;
-	align-self: center;
 }
 
 .line {
@@ -113,16 +133,12 @@ header {
 }
 
 .menu-list-style a:hover {
-	text-decoration: none;
-	font-family: 'cantarellbold';
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	font-size: 11px;
 	color: #224070;
 	transition-duration: 0.5;
 	transition-timing-function: ease-out;
 }
 
+/********** HOME PAGE ************/
 
 /*****************************
 HERO CONTENT -new code-
@@ -148,8 +164,6 @@ HERO CONTENT -new code-
 	font-family: 'cantarellregular';
 	font-size: 1.0625rem;
 	color: #224070;
-	background-color: #fff;
-	/*height: 10rem;*/
 	text-align: center;
 	margin: 10% 7% 0% 7%; 
 	padding-bottom: 12%;
@@ -191,27 +205,26 @@ section {
 	background-color: #224070;
 }
 
-.service-icon {
-	display: none;
+.service-text-style{
+	padding-top: 1.2rem;
 }
 
-.service-title {
+.sub-title {
 	text-align: center;
-}
-
-.service-title a {
 	text-decoration: none;
 	color: #3489CE;
 	font-family: 'cantarellbold';
 	font-size: 0.98rem;
 	letter-spacing: 0.12rem;
-	padding-top: 8%;
+}
+
+.sub-title a {
 	transition-property: color;
 	transition-duration: 0.5s;
 	transition:timing-function: ease-out;
 }
 
-.service-title a:hover {
+.sub-title a:hover {
 	color: #fff;
 	transition-duration: 0.5;
 	transition-timing-function: ease-out;
@@ -272,6 +285,7 @@ Footer Styling
 	font-size: 0.9rem;
 }
 
+
 .contact-footer {
 	display: flex;
 	flex-direction: column;
@@ -318,6 +332,81 @@ Footer Styling
 	padding: 2rem;
 }
 
+/********** ABOUT PAGE ************/
+
+/************************************
+SECTION-ABOUT PAGE-
+************************************/
+
+.text-left-align {
+	font-family: 'cantarellregular';
+	font-size: 1.0625rem;
+	color: #224070;
+	text-align: left;
+	padding-top: 1.2rem;
+	padding-right: 2rem;
+	padding-left: 2rem;
+	padding-bottom: 0.75rem;
+}
+
+.flex-column {
+}
+
+.team-profile img {
+	margin: auto;
+	width: 60%;
+	margin-left: 5rem;
+	margin-right:5rem;
+}
+
+.team-profile .team-name {
+	font-family: 'cantarellbold';
+	font-size: 1.5rem;
+	margin-bottom: -0.2rem;
+	color: #224070;
+	text-align: center;
+}
+
+.team-profile .team-role {
+	font-family: 'cantarellregular';
+	font-size: 0.85rem;
+	letter-spacing: 0.1rem;
+	color: #224070;
+	text-align: center;
+}
+
+/********** PROJECT PAGE ************/
+
+/************************************
+SECTION - PROJECT PAGE-
+************************************/
+
+.title-left-align {
+	font-family: 'cantarellbold';
+	font-size: 0.98rem;
+	letter-spacing: 0.12rem;
+	color: #224070;
+	text-align: left;
+	padding-top: 0.65rem;
+	padding-right: 2rem;
+	padding-left: 2rem;
+}
+
+.project-description {
+font-family: 'cantarellregular';
+	font-size: 1.0625rem;
+	color: #224070;
+	text-align: left;
+	padding-right: 2rem;
+	padding-left: 2rem;
+	padding-bottom: 0.65rem;
+}
+
+.project-img {
+	width: 100%;
+	height: auto;
+	margin-top: 1.2rem;
+}
 
 /*************************************************************
 **************************************************************
@@ -377,6 +466,12 @@ header {
 	padding: 2rem;
 }
 
+.img-hero {
+	width: 100%;
+	height: auto;
+	margin-top: 0;
+}
+
 /***********************************
 HERO CONTENT - MIN 600px - new code
 ***********************************/
@@ -399,11 +494,10 @@ HERO CONTENT - MIN 600px - new code
 }
 
 .intro-text {
-	font-family: 'cantarellregular';
 	font-size: 1.5rem;
 	line-height: 2.3rem;
 	margin: 7% 7% 0% 7%; 
-	padding-bottom: 10%;
+	padding-bottom: 8%;
 }
 
 
@@ -411,13 +505,17 @@ HERO CONTENT - MIN 600px - new code
 SECTION CONTENT - MIN 600px - new code
 **************************************/
 
-.service-title {
+/*.sub-title {
 	margin-top:5%;
 	margin-bottom:2%;
 	padding:0;
+}*/
+
+.service-text-style{
+	padding-top: 2rem;
 }
 
-.service-title a {
+.sub-title a {
 	font-size: 1.4rem;
 	transition-property: color;
 	transition-duration: 0.5s;
@@ -426,19 +524,79 @@ SECTION CONTENT - MIN 600px - new code
 
 .service-text {
 	font-family: 'cantarellregular';
-	font-size: 18px;
+	font-size: 1.125rem;
 	color: #fff;
 	text-align: center;
 	margin-bottom: -10px;
 	line-height: 2rem;
 }
 
+/********** CONTACT PAGE MIN 600PX ************/
 
+/************************************
+SECTION - ABOUT PAGE - 600PX
+************************************/
+
+body {
+	width: 100%;
+}
+
+.text-left-align {
+	font-size: 1.0625rem;
+	text-align: left;
+	padding-right: 5rem;
+	padding-left: 5rem;
+}
+
+.flex-column {
+	width:100%;
+	display: flex;
+	align-items: flex;
+}
+
+.team-profile {
+	width: 100%;
+	align-self: center;
+}
+
+.team-img {
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	margin: auto;
+	width: 60%;
+}
+
+.team-profile .team-name {
+	font-size: 1.1rem;
+	margin-bottom: -0.2rem;
+	color: #224070;
+	text-align: center;
+}
+
+.team-profile .team-role {
+	font-family: 'cantarellregular';
+	font-size: 0.85rem;
+	letter-spacing: 0.1rem;
+	color: #224070;
+	text-align: center;
+}
+
+
+/********** PROJECT PAGE 606PX ************/
+
+/************************************
+SECTION - PROJECT PAGE- MIN 600PX
+************************************/
+
+.project-img {
+	margin-top: 0;
+}
 
 /*************************************************************
 **************************************************************
 
-MIN 950PX -MEDIA QUERY | NEW CODE-
+MIN 960PX -MEDIA QUERY | NEW CODE-
 
 **************************************************************
 **************************************************************/
@@ -446,7 +604,7 @@ MIN 950PX -MEDIA QUERY | NEW CODE-
 @media only screen and (min-width: 960px) {
 
 /***********************************
-HERO CONTENT - MIN 920px - new code
+HERO CONTENT - MIN 960px - new code
 ***********************************/
 
 .wordmark-style {
@@ -456,32 +614,19 @@ HERO CONTENT - MIN 920px - new code
 }
 
 .intro-text {
-	font-family: 'cantarellregular';
-	font-size: 1.8rem;
-	line-height: 2.7rem;
-	color: #224070;
-	background-color: #fff;
-	/*height: 10rem;*/
-	text-align: center;
-	margin: 7% 7% 0% 7%; 
-	/*padding-bottom: 10%;*/
+	font-size: 2.1rem;
+	line-height: 3.3rem;
+	
 }
 
 /************************************
-SECTION - MIN 920PX - new code
+SECTION - MIN 960PX - new code
 ************************************/	
 
 section {
 	height: 100%;
 }
 
-.service-icon {
-	display: inline-block;
-	width: 10%;
-	height: 10%;
-	margin-right: auto;
-	margin-left: auto;
-}
 
 .section-container{
 	display: flex;
@@ -501,25 +646,23 @@ section {
 	flex-direction: column;
 	align-self: stretch;
 	flex: 0 0 50%;
-	background-color: #224070;
+	/*background-color: #224070;*/
+}
+
+.service-text-style {
+	padding-top: 10%;
+	margin-bottom:0;
 }
 
 
-.service-title {
-	text-align: center;
-}
-
-.service-title a {
-	color: #3489CE;
-	font-family: 'cantarellbold';
-	font-size: 1.4rem;
+.sub-title a {
+	font-size: 1.6rem;
 }
 
 .service-text {
-	font-size: 15px;
+	font-size: 20px;
 	margin-top:0;
-	padding-bottom: 10%;
-	line-height: 1.8rem;
+	line-height: 2rem;
 
 }
 
@@ -532,7 +675,7 @@ section {
 }
 
 /***********************************
-FOOTER - MIN 600px - new code
+FOOTER - MIN 960px - new code
 ***********************************/
 
 .footer {
@@ -562,10 +705,103 @@ FOOTER - MIN 600px - new code
 	margin-top: -8rem;
 }
 
-/******************
-github test nav-bar
-******************/
+/********** PROJECT PAGE 960PX ************/
+
+/************************************
+SECTION - PROJECT PAGE- MIN 960PX
+************************************/
+
+.project {
+    width: 100%;
+    display: flex;
+    flex-flow: row no-wrap;
+    align-content: stretch;
+}
+
+.project div {
+    flex: 1  3 100%;
+}
 
 
+.project-img {
+	margin-top: 0;
+}
+
+
+
+
+/*************************************************************
+**************************************************************
+
+MIN 1500PX -MEDIA QUERY | NEW CODE-
+
+**************************************************************
+**************************************************************/
+
+@media only screen and (min-width: 1500px) {
+	
+	.service-text-style {
+		padding-top: 10%;
+		margin-bottom: 0;
+	}
+
+	.intro-text {
+		font-size: 2.7rem;
+		line-height: 4.2rem;
+	}
+
+/************************************
+SECTION - MIN 1500PX - new code
+************************************/	
+
+
+.section-container{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+.img-service {
+	display: flex;
+	flex-direction: column;
+	align-self: stretch;
+	flex: 0 0 50%;
+}
+
+.service-text-style {
+	padding-top: 13%;
+	margin-bottom:0;
+}
+
+
+.sub-title a {
+	font-size: 1.9rem;
+}
+
+.service-text {
+	font-size: 25px;
+	margin-top:0;
+	line-height: 2.4rem;
+
+}
+
+/********** CONTACT PAGE MIN 1500PX ************/
+
+/************************************
+SECTION - ABOUT PAGE - 1500PX
+************************************/
+
+body {
+	width: 100%;
+}
+
+.text-left-align {
+	padding-right: 30rem;
+	padding-left: 30rem;
+}
+
+h2 {
+	padding-top: 2rem;
+}
 
 
